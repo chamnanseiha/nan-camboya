@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nan - Guía Oficial de Camboya | Tours en Español</title>
-    <meta name="description" content="Guía turística profesional de Camboya. Tours personalizados en español a Angkor Wat, Phnom Penh y playas. Experiencia auténtica camboyana.">
+    <title>Guía Camboyana con Nan | Tours en Español en Camboya 2024</title>
+    <meta name="description" content="Guía turística oficial de Camboya en español. Tours personalizados a Angkor Wat, Phnom Penh, Siem Reap. Guía local certificada con 5 años de experiencia.">
+    <meta name="keywords" content="guía camboya, tours camboya español, angkor wat, phnom penh, siem reap, viajes camboya, turismo camboya">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -256,6 +257,39 @@
             display: block;
         }
         
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-card h3 {
+            color: var(--dark);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+        
         /* Contact Section */
         .contact-form {
             max-width: 600px;
@@ -359,11 +393,12 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="#" class="logo">Nan<span>Camboya</span></a>
+                <a href="#" class="logo">Guía<span>Camboyana</span></a>
                 <ul class="nav-links">
                     <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#tours">Tours</a></li>
-                    <li><a href="#sobre">Sobre Mí</a></li>
+                    <li><a href="#tours">Tours Camboya</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#sobre">Guía Local</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
@@ -373,11 +408,11 @@
     <!-- Hero Section -->
     <section class="hero" id="inicio">
         <div class="container">
-            <h1>Guía de Camboya con Nan</h1>
-            <p>Descubre la magia de los templos ancestrales, playas paradisíacas y la rica cultura camboyana con tours personalizados en español</p>
+            <h1>Guía Turística de Camboya en Español</h1>
+            <p>Descubre los templos de Angkor Wat, la cultura jemer y las playas paradisíacas con una guía local certificada. Tours personalizados para una experiencia auténtica en Camboya.</p>
             <div>
-                <a href="#tours" class="btn">Ver Tours Disponibles</a>
-                <a href="#contacto" class="btn btn-outline">Contactar Ahora</a>
+                <a href="#tours" class="btn">Ver Tours en Camboya</a>
+                <a href="#contacto" class="btn btn-outline">Consulta Gratuita</a>
             </div>
         </div>
     </section>
@@ -386,17 +421,17 @@
     <section id="tours">
         <div class="container">
             <div class="section-title">
-                <h2>Tours Exclusivos</h2>
-                <p>Experiencias únicas diseñadas para descubrir la auténtica Camboya</p>
+                <h2>Tours en Camboya 2024</h2>
+                <p>Circuitos turísticos diseñados para descubrir lo mejor del Reino de Camboya</p>
             </div>
             <div class="tours-grid">
                 <div class="tour-card">
                     <div class="tour-image" style="background-image: url('https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1133&q=80')"></div>
                     <div class="tour-content">
-                        <h3>Angkor Wat Completo</h3>
-                        <p>Tour de día completo por los templos más impresionantes del complejo de Angkor, incluyendo Angkor Wat, Bayon y Ta Prohm.</p>
-                        <div class="tour-price">Desde $85 USD</div>
-                        <a href="#contacto" class="btn">Reservar Tour</a>
+                        <h3>Tour Angkor Wat Completo</h3>
+                        <p>Experiencia completa por el complejo de templos de Angkor. Incluye Angkor Wat, Bayon, Ta Prohm y templos menores. Guía especializado en historia jemer.</p>
+                        <div class="tour-price">Desde $85 USD por persona</div>
+                        <a href="#contacto" class="btn">Reservar Tour Angkor</a>
                     </div>
                 </div>
                 
@@ -404,20 +439,53 @@
                     <div class="tour-image" style="background-image: url('https://images.unsplash.com/photo-1589321599763-35e31b56c719?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80')"></div>
                     <div class="tour-content">
                         <h3>Phnom Penh Histórico</h3>
-                        <p>Recorrido por la capital camboyana visitando el Palacio Real, Museo Nacional y los principales sitios históricos.</p>
-                        <div class="tour-price">Desde $65 USD</div>
-                        <a href="#contacto" class="btn">Reservar Tour</a>
+                        <p>Recorrido por la capital de Camboya: Palacio Real, Pagoda de Plata, Museo Nacional y Campos de la Muerte. Historia moderna y cultura camboyana.</p>
+                        <div class="tour-price">Desde $65 USD por persona</div>
+                        <a href="#contacto" class="btn">Tour Phnom Penh</a>
                     </div>
                 </div>
                 
                 <div class="tour-card">
                     <div class="tour-image" style="background-image: url('https://images.unsplash.com/photo-1544644181-4e133b2460d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80')"></div>
                     <div class="tour-content">
-                        <h3>Playas del Sur</h3>
-                        <p>Descubre las playas vírgenes de Sihanoukville y las islas tropicales del Golfo de Tailandia.</p>
-                        <div class="tour-price">Desde $95 USD</div>
-                        <a href="#contacto" class="btn">Reservar Tour</a>
+                        <h3>Playas de Sihanoukville</h3>
+                        <p>Descubre las playas vírgenes del sur de Camboya e islas tropicales. Snorkeling, relax y gastronomía local en el Golfo de Tailandia.</p>
+                        <div class="tour-price">Desde $95 USD por persona</div>
+                        <a href="#contacto" class="btn">Tour Playas Camboya</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" style="background: var(--light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Servicios de Guía en Camboya</h2>
+                <p>Experiencia completa para tu viaje al Reino de Camboya</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Guía Local Certificada</h3>
+                    <p>Guía turística oficial con certificación del Ministerio de Turismo de Camboya. Conocimiento profundo de historia y cultura jemer.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Español Fluido</h3>
+                    <p>Comunicación perfecta en español durante todo el tour. Explicaciones claras y atención personalizada para hispanohablantes.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car-alt"></i>
+                    </div>
+                    <h3>Transporte Incluido</h3>
+                    <p>Servicio puerta a puerta desde tu hotel. Vehículos cómodos con aire acondicionado y conductores profesionales.</p>
                 </div>
             </div>
         </div>
@@ -428,14 +496,14 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>Sobre Mí</h2>
-                    <p>Hola, soy Nan, guía turística profesional de Camboya con más de 5 años de experiencia mostrando la belleza y cultura de mi país a viajeros de todo el mundo.</p>
-                    <p>Especializado en tours en español, ofrezco experiencias auténticas y personalizadas que van más allá de los circuitos turísticos convencionales. Mi pasión es compartir la rica historia, tradiciones y secretos locales de Camboya.</p>
-                    <p>Con certificación oficial de guía turística y dominio del español, garantizo una experiencia segura, educativa y memorable para cada viajero.</p>
-                    <a href="#contacto" class="btn">Contáctame</a>
+                    <h2>Guía Local en Camboya</h2>
+                    <p>Hola, soy Nan, guía turística profesional de Camboya con más de 5 años de experiencia acompañando viajeros de habla hispana. Nací y crecí en Siem Reap, a los pies de los templos de Angkor, lo que me permite ofrecer una perspectiva única y auténtica de mi país.</p>
+                    <p>Como guía local certificada, me especializo en tours culturales, históricos y personalizados. Mi objetivo es que cada visitante experimente la verdadera esencia de Camboya, más allá de los circuitos turísticos convencionales.</p>
+                    <p>Domino el español fluidamente y poseo certificación oficial del Ministerio de Turismo de Camboya. Garantizo tours seguros, educativos y memorables adaptados a tus intereses específicos.</p>
+                    <a href="#contacto" class="btn">Contactar Guía Local</a>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Nan - Guía de Camboya">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Nan - Guía Local de Camboya">
                 </div>
             </div>
         </div>
@@ -445,33 +513,33 @@
     <section id="contacto">
         <div class="container">
             <div class="section-title">
-                <h2>Contacto</h2>
-                <p>¿Listo para tu aventura en Camboya? Contáctame para personalizar tu tour ideal</p>
+                <h2>Contacta a tu Guía en Camboya</h2>
+                <p>¿Listo para explorar Camboya? Recibe asesoramiento personalizado sin compromiso</p>
             </div>
             <form class="contact-form" id="contactForm">
                 <div class="form-group">
                     <label for="name">Nombre Completo</label>
-                    <input type="text" id="name" class="form-control" placeholder="Tu nombre" required>
+                    <input type="text" id="name" class="form-control" placeholder="Tu nombre completo" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" class="form-control" placeholder="tu@email.com" required>
                 </div>
                 <div class="form-group">
-                    <label for="tour">Tour de Interés</label>
+                    <label for="tour">Tour de Interés en Camboya</label>
                     <select id="tour" class="form-control" required>
-                        <option value="">Selecciona un tour</option>
-                        <option value="angkor">Angkor Wat Completo</option>
-                        <option value="phnom-penh">Phnom Penh Histórico</option>
-                        <option value="playas">Playas del Sur</option>
-                        <option value="personalizado">Tour Personalizado</option>
+                        <option value="">Selecciona un tour en Camboya</option>
+                        <option value="angkor">Tour Angkor Wat Completo</option>
+                        <option value="phnom-penh">Tour Phnom Penh Histórico</option>
+                        <option value="playas">Tour Playas del Sur</option>
+                        <option value="personalizado">Tour Personalizado en Camboya</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" class="form-control" placeholder="Cuéntame sobre tus planes de viaje..." required></textarea>
+                    <label for="message">Tu Mensaje</label>
+                    <textarea id="message" class="form-control" placeholder="Cuéntame sobre tus fechas de viaje, número de personas e intereses específicos..." required></textarea>
                 </div>
-                <button type="submit" class="btn">Enviar Consulta</button>
+                <button type="submit" class="btn">Solicitar Información de Tours</button>
             </form>
         </div>
     </section>
@@ -481,18 +549,19 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <a href="#" class="logo">Nan<span>Camboya</span></a>
+                    <a href="#" class="logo">Guía<span>Camboyana</span></a>
+                    <p style="margin-top: 10px; opacity: 0.8;">Tu guía local de confianza en Camboya</p>
                 </div>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    <a href="#" title="Facebook Guía Camboya"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram Guía Camboya"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="WhatsApp Guía Camboya"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" title="TripAdvisor Guía Camboya"><i class="fab fa-tripadvisor"></i></a>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2024 Nan - Guía Oficial de Camboya. Todos los derechos reservados.</p>
-                <p>📍 Siem Reap, Camboya | 📧 nan.camboya@example.com | 📱 +855 12 345 678</p>
+                <p>&copy; 2024 Guía Camboyana - Guía Turística Oficial en Camboya. Todos los derechos reservados.</p>
+                <p>📍 Siem Reap, Camboya | 📧 info@guiacamboyana.com | 📱 +855 12 345 678</p>
             </div>
         </div>
     </footer>
@@ -527,6 +596,19 @@
                 header.style.backdropFilter = 'none';
             }
         });
+
+        // SEO enhancement - Add structured data
+        const structuredData = {
+            "@context": "https://schema.org",
+            "@type": "TouristAttraction",
+            "name": "Guía Camboyana - Tours en Español",
+            "description": "Guía turística oficial de Camboya en español. Tours personalizados a Angkor Wat, Phnom Penh y playas.",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Siem Reap",
+                "addressCountry": "Camboya"
+            }
+        };
     </script>
 </body>
 </html>
